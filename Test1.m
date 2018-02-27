@@ -1,11 +1,11 @@
 %Instructions: 
 %-connect arudino
 %-upload code
-%-type commands:
-%    clear all
-%    clc
-%    delete(instrfindall);
-%-run
+%-run 
+ 
+clear all;
+clc;
+delete(instrfindall);
 
 arduino = serial('COM8','Baudrate', 9600);
 fopen(arduino);
